@@ -30,7 +30,7 @@ void main() {
   
   var scores = [30,40,100,90,80];
   
-  // Retrieving an item from an index
+  // Retrieving an item from an index (Representing a row in DB)
   print(scores);
   print(scores[0]);
   print(scores[2]);
@@ -49,7 +49,7 @@ void main() {
   
   print(scores);
   
-  // 5) Map -> To store a key- value data (column in Excel)
+  // 5) Map -> To store a key- value data (column in DB)
   
   var info = {"name":"Muzaffar", "email":"wanmuz86@gmail.com","phone":"012345678"};
   print(info);
@@ -82,4 +82,25 @@ void main() {
   print(items[1]);
   print(items[0]["name"]);
   
+ // 6) dynamic -> I don't know what's the data type / any / Object
+  
+  dynamic sleepy = true;
+  dynamic anotherAge = 19;
+  dynamic anotherName = "Muzaffar";
+  dynamic newScores = [30,40,60,80];
+  print(sleepy);
+  print(anotherAge);
+  print(anotherName);
+  anotherAge = "nineteen"; // I can interchange the data type
+  print(anotherAge);
+  print(newScores);
+  print(newScores.length);
+  
+ // age = "twenty"; // it has to be int
+  //print(age);
+  
+  // This is an example of dataType Map<String,dyanamic>
+  // By defaut jsonEncode will produce Map<String,dynamic>
+  var anotherMap = {"name":"Muzaffar", "age":20, "phone":"0123456"};
+  print(anotherMap);
 }
