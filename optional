@@ -1,0 +1,43 @@
+void main() {
+  
+  // Optional in Dart
+  // String data type
+  
+  String name = "Muzaffar";
+  print(name);
+
+  
+  // All the data type that we have seen previously NEEDS to have value
+  // Cannot be empty / null; (non nullable)
+  
+// When I get a data from shared preference
+  // It could be a string or it could be null 
+  // It is null because there is no data saved under it..
+  
+  // An Optional Data Type is the data type that can is nullable
+  
+  String? message;
+  print(message);
+  message = "Let's have lunch";
+  
+  
+  // Normally you use if else to bring out the value of the nullable data type
+   if (message != null){
+     print("message");
+   }
+  
+  // Or... if you are sure the value is there... you can use !
+  
+  print(message!);
+  
+  var maps = {"name":"Muzaffar", "age":"30", "phone":"012345"};
+  
+  print(maps["name"]); // Muzaffar
+   print(maps["address"]); // null
+  
+  // In Some of the cast if we define our map as Map<String,String> 
+  // or it is implicitly defined as Map<String,String>
+  // You have to use ! to bring out the value (Refer back to this morning code) 
+   
+
+}
